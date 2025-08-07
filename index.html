@@ -12,30 +12,35 @@
 
 <body>
     <main class="main-content">
+        <!-- Section: banner. -->
         <header class="header-banner">
             <h1 class="main-title">Amigo Secreto</h1>
             <img src="assets/amigo-secreto.png" alt="Imagen representativa de amigo secreto">
         </header>
-        
+        <!-- Section: input. -->
         <section class="input-section">
             <h2 class="section-title">Digite el nombre de sus amigos</h2>
+            <!-- Section: input of name, and button to register a name. -->
             <div class="input-wrapper">
-                <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
+                <!-- Self-closing tag: 'https://www.geeksforgeeks.org/html/what-are-self-closing-tags-in-html/', 'https://developer.mozilla.org/en-US/docs/Glossary/Void_element'. -->
+                <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre" />
                 <button class="button-add" onclick="agregarAmigo()">Añadir</button>
             </div>
-           
+            <!-- List: friends added. -->
             <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
+            <!-- List: RESULTS message, AS A LIST ITEM. -->
             <ul id="resultado" class="result-list" aria-live="polite"></ul>
-
+            <!-- Button: for sorting and getting a result. -->
             <div class="button-container">
                 <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
-                    <img src="assets/play_circle_outline.png" alt="Ícono para sortear">
+                    <!-- Self-closing tag. -->
+                    <img src="assets/play_circle_outline.png" alt="Ícono para sortear" />
                     Sortear amigo
                 </button>
             </div>
         </section>
     </main>
-
+    <!-- Complement: calling JavaScript. -->
     <script src="app.js" defer></script>
 </body>
 </html>
