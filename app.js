@@ -27,26 +27,67 @@ function setValue(iIsProperty = false, iID, iValue) {
 
 }
 
+// Initialize app conditions.
 function initialize() {
+
+    //  Clears friends list: HTML and array.
+    //  Clears friends list - Array:
+    friends = [];
+    //  Clears friends list - HTML:
+    const friends_html = document.getElementById('listaAmigos');
+    friends_html.innerHTML = '';
+
+    return;
 
 }
 
-// function updateList(iHTMLList, iList) {
-// }
+//  Adds a single friend to friends HTML list.
 function addFriendToList(iID, iFriend) {
 
+    //  Create a 'li' tag and add it to it's 'ul' parent tag.
+    //  - 'li' and 'ul' tags structure: 'https://www.w3schools.com/tags/tag_ul.asp', 'https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ul'.
+    //  - Add 'li' with JavaScript: 'https://stackoverflow.com/questions/20673959/how-to-add-new-li-to-ul-onclick-with-javascript/20673977#20673977', 'https://forum.freecodecamp.org/t/adding-a-string-item-to-an-appendchild-li-element/314070/3'.
+    //  - HTML DOM createTextNode(): 'https://www.w3schools.com/jsref/met_document_createtextnode.asp'.
+    //  - HTML DOM appendChild(): 'https://www.w3schools.com/jsref/met_node_appendchild.asp'.
     const friend_html = document.createElement('li');
-    // //  OP01: direct not-safe HTML text injection.
+    // //  OP01: direct not-safe HTML text injection. Ref. 'https://www.quora.com/What-is-the-difference-between-createTextNode-and-InnerHTML-in-JavaScript'.
     // friend_html.innerHTML = iFriend;
     //  OP02: code-safe, with '.createTextNode'.
     const friend_html_text = document.createTextNode(iFriend);
     friend_html.appendChild(friend_html_text);
+    const friend_html_id = 'id_'.concat(iFriend); //  Set tag's id in format 'id_<friends_name>' concatenating strings: 'https://stackoverflow.com/questions/31845895/how-can-i-build-concatenate-strings-in-javascript/31845980#31845980'.
+    friend_html.setAttribute('id', friend_html_id);
+    // console.log(`friend_html_id: '${friend_html_id}'`);
+    // console.log(friend_html);
     
+    //  Add new 'li' friend to friends list 'ul'.
     const friends_html = document.getElementById(iID);
     friends_html.appendChild(friend_html);
 
+    return;
+
 }
 
+//  Refresh friends HTML list; i.e. clears list and rebuilds using friends array / list.
+//  - NOTE: it uses function 'addFriendToList()'.
+function updateFriendsList(iID, iList) {
+
+    //  Clear inner HTML of 'ul' list: 'https://stackoverflow.com/questions/18795028/javascript-remove-li-without-removing-ul/18795074#18795074'.
+    const friends_html = document.getElementById(iID);
+    friends_html.innerHTML = '';
+
+    //  Create a 'li' tag and add it to it's 'ul' parent tag.
+    //  - Add multiple 'li' with JavaScript: 'https://stackoverflow.com/questions/47951287/dynamically-add-li-to-ul-javascript/47951374#47951374'.
+    for (let i = 0; i < iList.length; i++) {
+        const friend = iList[i];
+        addFriendToList(iID, friend);
+    }
+
+    return;
+
+}
+
+//  Main function for adding new entries of friends.
 function agregarAmigo() {
 
     //  VARIABLES DECLARATION.
@@ -55,15 +96,16 @@ function agregarAmigo() {
     let friend_valid_not_in_list = false;
 
     //  'conts' vs. 'let' vs. 'var': 'https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/'.
-    const friend = getValue(iIsProperty = true, 'amigo');
+    const friend_raw = getValue(iIsProperty = true, 'amigo');
+    const friend = friend_raw.trim();
     // console.log(`friend: '${friend}'`);
 
     //  VALIDATIONS.
     //  VALIDATION 01: not empty or whitespace-only string. Ref. 'https://medium.com/@muhebollah.diu/crafting-a-powerful-empty-value-checker-in-javascript-6a0bbef2c1a4'.
-    if (friend.trim().length !== 0) {friend_valid_string = true;}
+    (friend.trim().length !== 0) ? (friend_valid_string = true) : (alert('Por favor ingrese un nombre válido.'));
     // console.log(`friend_valid_string: '${friend.trim().length}' | '${friend_valid_string}'`);
     //  VALIDATION 02: friend not in list. Ref. 'https://stackoverflow.com/questions/48592791/javascript-arrays-opposite-of-includes/75187084#75187084'.
-    if (friends.indexOf(friend) === -1) {friend_valid_not_in_list = true;}
+    (friends.indexOf(friend) === -1) ? (friend_valid_not_in_list = true) : (alert('Por favor ingrese otro nombre; éste ya ha sido registrado.'));
     // console.log(`friend_valid_not_in_list: '${friends.indexOf(friend)}' | '${friend_valid_not_in_list}'`);
     // VALIDATION - LAST: all previous validations passed?
     if (friend_valid_string && friend_valid_not_in_list) {friend_valid = true;}
@@ -71,27 +113,28 @@ function agregarAmigo() {
 
     //  EXECUTION.
     //  If input validations pass, add friend to friends list.
-    if (friend_valid) {
-        friends.push(friend);
-        addFriendToList('listaAmigos', friends[friends.length - 1]); // UPDATE 02, more granular.
-    }
+    if (friend_valid) {friends.push(friend);}
     console.log(`friends: '${friends}'`);
     console.log(friends);
 
     //  UPDATES TRIGERED.
 
-    //  UPDATE 01: clean input tag 'amigo'. Ref. 'https://www.geeksforgeeks.org/html/html-clearing-the-input-field/'.
+    //  UPDATE 01: add new friend to HTML list, IF it was a valid entry.
+    if (friend_valid) {updateFriendsList('listaAmigos', friends);}
+
+    //  UPDATE 02: clean input tag 'amigo'. Ref. 'https://www.geeksforgeeks.org/html/html-clearing-the-input-field/'.
     setValue(iIsProperty = true, 'amigo', '');
 
-    //  UPDATE 02: add new friend to HTML list.
-    // updateList('listaAmigos', friends);
+    return;
 
 }
 
 function sortearAmigo() {
 
+    return;
+
 }
 
 //  CODE EXECUTION.
 
-//  initialize();
+initialize(); // Cleans app.

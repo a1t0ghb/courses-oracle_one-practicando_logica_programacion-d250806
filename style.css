@@ -134,6 +134,13 @@ ul {
     margin: 20px 0;
 }
 
+/* Added styling for displaying names list. */
+.name-list {
+    margin-top: 15px;
+    font-size: 22px;
+    text-align: center;
+}
+
 .result-list {
     margin-top: 15px;
     color: #05DF05;
