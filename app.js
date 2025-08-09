@@ -162,10 +162,10 @@ function sortearAmigo() {
         
         //  UPDATES TRIGERED.
         UDFClearInnerHTML('listaAmigos'); //  Cleans HTML list of friends.
-        // document.getElementById('amigo').setAttribute('disabled', true);
-        // //  Get element by class name: 'https://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp'.
-        // document.getElementsByClassName('button-add')[0].setAttribute('disabled', true); //  Disables button to add friends. Using this method since there is ONLY 1 class called 'button-add'.
-        // document.getElementsByClassName('button-draw')[0].setAttribute('disabled', true); //  Disables button to get secret santa. Using this method since there is ONLY 1 class called 'button-draw'.
+        document.getElementById('amigo').setAttribute('disabled', true);
+        //  Get element by class name: 'https://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp'.
+        document.getElementsByClassName('button-add')[0].setAttribute('disabled', true); //  Disables button to add friends. Using this method since there is ONLY 1 class called 'button-add'.
+        document.getElementsByClassName('button-draw')[0].setAttribute('disabled', true); //  Disables button to get secret santa. Using this method since there is ONLY 1 class called 'button-draw'.
 
     }
     
