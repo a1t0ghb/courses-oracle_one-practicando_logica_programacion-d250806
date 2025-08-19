@@ -26,7 +26,7 @@
 # Basic JavaScript Game: (en) 'Secret Santa' / (sp) 'Amigo Secreto'.
 
 <p align="center">
-  🌐 '<a href="https://a1t0ghb.github.io/courses-oracle_one-practicando_logica_programacion-d250806/">https://a1t0ghb.github.io/courses-oracle_one-practicando_logica_programacion-d250806/</a>
+  🌐 '<a href="https://a1t0ghb.github.io/courses-oracle_one-practicando_logica_programacion-d250806/">https://a1t0ghb.github.io/courses-oracle_one-practicando_logica_programacion-d250806/</a>'
 </p>
 
 <!--
