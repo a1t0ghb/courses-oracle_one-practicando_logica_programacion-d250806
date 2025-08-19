@@ -13,7 +13,7 @@
 
 <!-- Badge: Done -->
 <p align="left">
-  <a href="#" onclick="return false;"><img src="https://img.shields.io/badge/STATUS-DONE-green?style=flat"/></a>
+  <a href="#" onclick="return false;"><img src="https://img.shields.io/badge/STATUS-DONE-green?style=flat" /></a>
 </p>
 
 <!-- README structure followed:
@@ -26,10 +26,21 @@
 # Basic JavaScript Game: (en) 'Secret Santa' / (sp) 'Amigo Secreto'.
 
 <p align="center">
-  🌐 '<a href="https://a1t0ghb.github.io/courses-oracle_one-practicando_logica_programacion-d250806/">https://a1t0ghb.github.io/courses-oracle_one-practicando_logica_programacion-d250806/</a>'
+  🌐 '<a href="https://a1t0ghb.github.io/courses-oracle_one-practicando_logica_programacion-d250806/">https://a1t0ghb.github.io/courses-oracle_one-practicando_logica_programacion-d250806/</a>
 </p>
 
-<img src="rsrcs/media/img-readme_gif.gif" width="900" />
+<!--
+Enable autoplay of animated images:
+- 'https://stackoverflow.com/questions/72508378/enable-gif-autoplay-on-github-readme/72509078#72509078'.
+- 'https://github.com/orgs/community/discussions/47709'.
+- 'https://github.com/settings/accessibility'.
+Image width for GitHub READMEs:
+- 'https://github.com/orgs/community/discussions/42424'.
+- 'https://gist.github.com/uupaa/f77d2bcf4dc7a294d109'.
+-->
+<p align="center">
+  <img src="rsrcs/media/img-readme_gif.gif" width="1200" />
+</p>
 
 Final delivery of the 4th course: '[Practicando Lógica de Programación: Challenge Amigo secreto](https://app.aluracursos.com/course/logica-programacion-challenge-amigo-secreto/)', from module (a.k.a. 'formación' in spanish) '[Principiante en Programación G9 - ONE](https://app.aluracursos.com/formacion-programacion-primeros-pasos-grupo9-one)', of [Alura LATAM](https://www.aluracursos.com/). <b>Part of [ORACLE Next Education (ONE)](https://www.oracle.com/co/education/oracle-next-education/) education program, in LATAM</b>.
 
