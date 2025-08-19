@@ -29,6 +29,8 @@
   🌐 '<a href="https://a1t0ghb.github.io/courses-oracle_one-practicando_logica_programacion-d250806/">https://a1t0ghb.github.io/courses-oracle_one-practicando_logica_programacion-d250806/</a>'
 </p>
 
+<img src="rsrcs/media/img-readme_gif.gif" width="900" />
+
 Final delivery of the 4th course: '[Practicando Lógica de Programación: Challenge Amigo secreto](https://app.aluracursos.com/course/logica-programacion-challenge-amigo-secreto/)', from module (a.k.a. 'formación' in spanish) '[Principiante en Programación G9 - ONE](https://app.aluracursos.com/formacion-programacion-primeros-pasos-grupo9-one)', of [Alura LATAM](https://www.aluracursos.com/). <b>Part of [ORACLE Next Education (ONE)](https://www.oracle.com/co/education/oracle-next-education/) education program, in LATAM</b>.
 
 <!-- Callouts:
