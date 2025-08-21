@@ -48,8 +48,7 @@ Final delivery of the 4th course: '[Practicando Lógica de Programación: Challe
 - Improved format taken from examples in 'https://github.com/nasa/openmct/blob/master/README.md?plain=1'.
 -->
 > [!NOTE]
-> This README:
-> - Is **mainly** written in english (en), but it might have some sections in spanish (sp), since course content is in spanish.
+> This README is **mainly** written in english (en), but it might have some sections in spanish (sp), since course content is in spanish.
 
 # About.
 - The course covered topics such as:
@@ -66,7 +65,7 @@ Available at '<https://app.aluracursos.com/certificate/c5b5ab0a-752e-48b0-bbb3-a
   2. 'Challenge Amigo secreto'.
   3. 'Entrega del Challenge'.
 
-## Links to program resources.
+## 🔗 Links to program resources.
 
 **PROGRAM STRUCTURE.**
 - <b>*[Course]* 'Practicando Lógica de Programación: Challenge Amigo secreto'</b>: '<https://app.aluracursos.com/course/logica-programacion-challenge-amigo-secreto/>'.
@@ -83,7 +82,7 @@ Available at '<https://app.aluracursos.com/certificate/c5b5ab0a-752e-48b0-bbb3-a
 - 'https://contrib.rocks/'.
 - 'https://contrib.rocks/preview?repo=a1t0ghb%2Fcourses-oracle_one-logica_programacion_II-d250726'
 -->
-# Contributors.
+# 🤝 Contributors.
 
 <a href="https://github.com/a1t0ghb/courses-oracle_one-practicando_logica_programacion-d250806/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=a1t0ghb/courses-oracle_one-practicando_logica_programacion-d250806" />
@@ -94,7 +93,7 @@ Made with [contrib.rocks](https://contrib.rocks).
 <!-- Authors table structure
 - From repo: 'https://github.com/camilafernanda/GlicoCare/blob/main/README.md?plain=1'.
 -->
-# Authors.
+# 📜 Authors.
 
 | [<img src="https://avatars.githubusercontent.com/u/32377614?v=4" width=70><br><sub>a1t0ghb</sub>](https://github.com/a1t0ghb) |
 | :---: |
