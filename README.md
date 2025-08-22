@@ -51,10 +51,12 @@ Final delivery of the 4th course: '[Practicando Lógica de Programación: Challe
 > This README is **mainly** written in english (en), but it might have some sections in spanish (sp), since course content is in spanish.
 
 # ℹ About.
-- The course covered topics such as:
-  - Most topics covered in **previous** course 'Lógica de programación: explorar funciones y listas' repo.: '<https://github.com/a1t0ghb/courses-oracle_one-logica_programacion_II-d250726/tree/main?tab=readme-ov-file#about>'.
-  - Programatic creation and manipulation of HTML objects via JavaScript; specifically unordered lists ('ul') tags and its list items ('li') tags, using DOM methods such as `.createElement()` and `.appendChild()`.
-  - Use of 'for loops' to access and manipulate arrays; e.g. `for (let i = 0; i < iList.length; i++) {const friend = iList[i]; ...}`.
+
+The course covered topics such as:
+
+- Most topics covered in **previous** course 'Lógica de programación: explorar funciones y listas' repo.: '<https://github.com/a1t0ghb/courses-oracle_one-logica_programacion_II-d250726/tree/main?tab=readme-ov-file#about>'.
+- Programatic creation and manipulation of HTML objects via JavaScript; specifically unordered lists ('ul') tags and its list items ('li') tags, using DOM methods such as `.createElement()` and `.appendChild()`.
+- Use of 'for loops' to access and manipulate arrays; e.g. `for (let i = 0; i < iList.length; i++) {const friend = iList[i]; ...}`.
 
 ## 🥇 Course Certificate of Completion.
 Available at '<https://app.aluracursos.com/certificate/c5b5ab0a-752e-48b0-bbb3-ab77809b67fd>'.
